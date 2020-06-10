@@ -17,18 +17,16 @@ public class Calculator {
     public Integer sum (Integer x, Integer y){
         return x+y;
     }
-    public Integer mulitply (Integer x, Integer y){
+    public Integer multiply (Integer x, Integer y){
         return x*y;
     }
     public Integer subtract (Integer x, Integer y){
         if(x<y){
             return y-x;
         }
-        else {
-            return x-y;
-        }
+        return x-y;
     }
-    public Integer divide (Integer x, Integer y){
+    public Decimal divide (Decimal x, Decimal y){
         return x/y;
     }
 }
