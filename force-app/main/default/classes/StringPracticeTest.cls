@@ -139,4 +139,11 @@ public with sharing class StringPracticeTest {
         System.assertEquals(result, actual);
     }
 
+    @isTest
+    public static void shouldReturnFirstSecondAndThirdDigitOfANumberWhen3Digits(){
+        //arrange
+        //assert
+        //test
+    }
+
 }
