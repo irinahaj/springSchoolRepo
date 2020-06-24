@@ -1,3 +1,9 @@
 <template>
+    <lightning-card title="Create Contact" icon-name="standard:contact">
+        <lightning-input label="First Name" value={c.firstName}></lightning-input>
+        <lightning-input label="Last Name" value={c.lastName}></lightning-input>
+
+        <lightning-button label="Create" onclick={handleClick}></lightning-button>
+    </lightning-card>
     
 </template>

@@ -1,3 +1,26 @@
 <template>
+    <lightning-card>
+    <lightning-input
+        label='What is your name?'
+        name='Name'
+        value={Name}>
+    </lightning-input>
     
+    <lightning-button class="slds-align_right" label="OK" onclick={openModal}></lightning-button>
+</lightning-card>
+<template if:true={modalOpen}>
+    <section role="dialog">
+        <div class="slds-modal_container">
+            <header class="slds-modal_header">
+                <p>Greetings</p>
+            </header>
+            <div class="slds-modal_content">
+                <p>Hello {Name}</p>
+            </div>
+        </div>
+        <footer class="slds-modal_footer">
+            <lightning-button class="slds-align_right" label="Close" onclick={closeModal}></lightning-button>
+        </footer>
+    </section>
+</template>
 </template>

@@ -11,4 +11,10 @@ public with sharing class Contact_Selector {
         insert c;
         return c.Id;
     }
+
+    @AuraEnabled (cacheable = true)
+    public static list<Contact> getContacts(){
+        return [SELECT FirstName, LastName FROM Contact LIMIT 10];
+        
+    }
 }
